@@ -1,9 +1,9 @@
 from django.db import models
-
+from core.models import Brand
 
 # Create your models here.
 class Car(models.Model):
-    brand: models.CharField(max_length=30, null=False, default='Saipa')
+    brand: models.ForeignKey(Brand,on_delete=models.RESTRICT)
     color = models.CharField(max_length=3, choices=[
         ('RED', 'red'),
         ('BLU', 'blue'),
