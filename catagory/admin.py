@@ -1,5 +1,4 @@
 from django.contrib import admin
-
+from .models import *
 # Register your models here.
-# from models import Brand
-# admin.site.register(Brand)
+admin.site.register(Catagory)

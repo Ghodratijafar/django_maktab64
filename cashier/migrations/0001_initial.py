@@ -12,11 +12,13 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Brand',
+            name='Table',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('country', models.CharField(max_length=20)),
-                ('name', models.CharField(max_length=20)),
+                ('table_number', models.IntegerField()),
+                ('cafe_positio', models.CharField(max_length=30)),
+                ('capacity', models.IntegerField()),
+                ('status', models.CharField(max_length=20)),
             ],
         ),
     ]
