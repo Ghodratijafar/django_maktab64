@@ -1,3 +1,4 @@
+{% load app1_template_filters %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +9,6 @@
 <div style="display: flex;justify-content: center;align-items: center;background-color: coral;height: 100%;width: 100%">
     <h1 style="color: darkgreen">Hello jafar</h1>
 </div>
+{{ 2 | akbar_filter:3 }}
 </body>
 </html>

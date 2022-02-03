@@ -9,6 +9,9 @@ class Menuitem(models.Model):
     discount = models.IntegerField(default=0)
     catagory = models.ForeignKey(Catagory, models.CASCADE)
 
+    # def __str__(self):
+        # return f"name:{self.name}\nprice:{self.price}\ndescription:{self.description}\ndiscount:{self.discount}\ncatagory:{self.catagory}"
+
 
 class Receipts(models.Model):
     table_id = models.ForeignKey(Table,on_delete=models.CASCADE)
